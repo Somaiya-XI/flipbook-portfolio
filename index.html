@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Arwa Saad</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+
+    <link href="./dflip/css/dflip.min.css" rel="stylesheet" type="text/css">
+    <link href="./dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+
+        html, body {font-family: "Winky Sans", sans-serif;}
+
+        ._df_book-cover{
+            border-top-right-radius: 0.35rem; 
+            border-bottom-right-radius: 0.35rem;
+            border-top-left-radius: 0.1rem;
+            border-bottom-left-radius: 0.1rem;
+        }
+
+    </style>
+
+</head>
+<!-- Flipbook Script -->
+<script src="./dflip/js/libs/jquery.min.js" type="text/javascript"></script>
+<script src="./dflip/js/dflip.min.js" type="text/javascript"></script>
+
+<body>
+
+    <div class="flex justify-center items-center h-screen bg-[#f4f0ed]">
+        <div class="_df_thumb" id="book" source="file.pdf" style="width: 400px; height: 286px;" thumb="thumbnail.jpg">
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<script>
+
+    var option_book = {
+        backgroundColor: "#d8cec5",
+        webglShadow: true,
+        hideControls: "",
+        webgl:  true,
+        icons: {
+            'next': 'hgi hgi-stroke hgi-arrow-right-01',
+            'prev': 'hgi hgi-stroke hgi-arrow-left-01',
+            'thumbnail': 'hgi hgi-stroke hgi-left-to-right-list-bullet',
+            'zoomin': 'hgi hgi-stroke hgi-search-add',
+            'zoomout': 'hgi hgi-stroke hgi-search-minus',
+            'share': 'hgi hgi-stroke hgi-share-01',
+            'fullscreen': 'hgi hgi-stroke hgi-square-arrow-expand-01',
+            'sound': 'hgi hgi-stroke hgi-volume-high',
+            "start": "hgi hgi-stroke hgi-arrow-left-double",
+            "end": "hgi hgi-stroke hgi-arrow-right-double",
+            "douplepage": "hgi hgi-stroke hgi-book-open-01",
+            "singlepage": "hgi hgi-stroke hgi-file-02",
+            "download": "hgi hgi-stroke hgi-download-04",
+            "twitter": "hgi hgi-stroke hgi-twitter",
+            "facebook": "hgi hgi-stroke hgi-facebook-02",
+            "mail": "hgi hgi-stroke hgi-mail-01",
+        },
+    };
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const btn = document.querySelector('._df_thumb');
+        btn.click();
+    });
+
+</script>
+
+
+</body>
+
+</html>
