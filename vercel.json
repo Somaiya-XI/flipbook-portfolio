@@ -1,4 +1,4 @@
 {
   "cleanUrls": true,
-  "rewrites": [{"source": "/file.pdf", "destination": "/file.pdf"}]
+  "rewrites": [{"source": "/arwa-spring-2025-portfolio.pdf", "destination": "arwa-spring-2025-portfolio.pdf"}]
 }
